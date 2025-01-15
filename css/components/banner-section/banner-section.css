@@ -1,0 +1,14 @@
+.banner-section {
+    background-image: url(../../../assets/img/IMG-BANNER.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 945px;
+    position: relative;
+}
+
+.banner-section .main-menu {
+    position: absolute;
+    bottom: 100px;
+    left: 667px;
+    transform: scale(2);
+}

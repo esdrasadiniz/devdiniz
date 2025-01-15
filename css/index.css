@@ -1,0 +1,149 @@
+header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.486);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between ;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+header .main-subtitle  {
+    font-size: 23px;
+    margin-left: 20px;
+    text-shadow: none;
+    padding-top: 8px;
+}
+
+/*min-width significa que é desse valor para cima*/
+
+@media screen and (min-width: 1500px) {
+    header .open-menu {
+        display: none;
+    }    
+
+    header nav .close-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    
+    header {
+        padding: 2.5vw 1vw;
+        align-items: center;
+    }
+
+    header .main-subtitle {
+        font-size: 2.7vw;
+        line-height: 4vw;
+        margin-left: 3vw;
+
+    }
+    
+    header nav {
+        position: fixed;
+        box-sizing: border-box;
+        background-color: #43757e;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        margin-right: 0;
+        padding-left: 8vw;
+        padding-top: 12vw;
+        gap: 3vw;
+        transition: transform 0.2s linear;
+    }
+
+    header nav::before {
+        content: 'Menu';
+        font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+        font-size: 9vw;
+        font-weight: 400;
+        color: #FFF;
+        text-align: left;
+        margin-bottom: 6vw;
+    }
+
+    header nav .close-menu {
+       position: absolute;
+       top: 2vw;
+       right: 0;
+    }
+
+    header nav a {
+        display: flex;
+        margin-right: 7vw;
+        line-height: 14vw;
+        font-size: 5vw;
+        margin-right: 6vw;
+        line-height: 14vw;
+    }
+
+    header nav .main-button {
+        height: 12.5vw;
+        width: 52vw;
+        padding: 0;
+        font-size: 5.5vw;
+        line-height: 12.3vw;    
+    }
+}
+
+nav { 
+    text-align: right;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    line-height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+nav a:hover {
+    color: #edc68e;
+}
+
+
+header .title {
+    color: #FFF;
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    margin: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    footer img {
+        margin: 4vw;
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
