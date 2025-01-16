@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/components/banner-section/banner-section.css">
     <link rel="stylesheet" href="css/components/banner-section/main-menu.css">
+    <link rel="stylesheet" href="css/components/main-title.css">
+    <link rel="stylesheet" href="css/components/banner-section/photo-glitch.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <section class="banner-section">
+        <h1 class="main-title">DEVELOPER</h1>
+        <h2 class="main-subtitle">FRONT END</h2>
 
         <div class="main-menu">
             <div class="radio-wrapper">
@@ -39,6 +48,32 @@
                 </div> 
             </div>
         </div>
+        
+        <svg class="filter">
+            <filter id="alphaRed">
+              <feColorMatrix mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+            </filter>
+            <filter id="alphaGreen">
+              <feColorMatrix mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+            </filter>
+            <filter id="alphaBlue">
+              <feColorMatrix mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="joint" />
+            </filter>
+            <filter id="alpha">
+              <feColorMatrix type="saturate" values="0"/>
+            </filter>
+          </svg>
+          
+          <div class="photo-glitch">
+            <div class="imgWrap">
+              <img class="red" src="assets/img/hd_restoration_result_image.png">
+              <img class="green" src="assets/img/hd_restoration_result_image.png">
+              <img class="blue" src="assets/img/hd_restoration_result_image.png">
+              
+            </div>
+          </div>
+
+        <img src="assets/img/hd_restoration_result_image.png" alt="foto do esdras" class="photo">
 
 
     </section>

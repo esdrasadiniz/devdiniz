@@ -366,18 +366,16 @@ body {
 
 h1{
   color: #E6626F;
-  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-family: "Anton", serif;
   font-size: 40px;
   line-height: 40px;
-  text-shadow: 5px 5px 0 black;
 }
 
 h2 {
   color: #FFF;
-  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-family: "geo", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  text-shadow: 5px 5px 0 black;
 }
 
 figure {

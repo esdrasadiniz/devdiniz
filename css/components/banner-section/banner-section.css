@@ -1,9 +1,11 @@
 .banner-section {
-    background-image: url(../../../assets/img/IMG-BANNER.png);
+    background-image: url(../../../assets/img/bg.gif);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position-y: -50px;
     height: 945px;
     position: relative;
+    overflow: hidden;
 }
 
 .banner-section .main-menu {
@@ -11,4 +13,37 @@
     bottom: 100px;
     left: 667px;
     transform: scale(2);
+}
+
+.banner-section .photo {
+    width: 850px;
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+
+}
+
+.banner-section .main-title {
+    color: #ef6273;
+    font-size: 227px;
+    position: absolute;
+    top: 335px;
+    left: 281px;
+}
+
+.banner-section .main-subtitle {
+    color: #737373;
+    font-size: 115px;
+    position: absolute;
+    top: 330px;
+    left: 428px;
+    letter-spacing: 24px;
+}
+
+.banner-section .photo-glitch {
+    transform: scale(2.125);
+    position: absolute;
+    bottom: 231px;
+    right: 226px;
+    z-index: 2;
 }
