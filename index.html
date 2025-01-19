@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Diniz</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/components/banner-section/banner-section.css">
-    <link rel="stylesheet" href="css/components/banner-section/main-menu.css">
-    <link rel="stylesheet" href="css/components/main-title.css">
-    <link rel="stylesheet" href="css/components/banner-section/photo-glitch.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Diniz</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/components/banner-section/banner-section.css">
+  <link rel="stylesheet" href="css/components/banner-section/main-menu.css">
+  <link rel="stylesheet" href="css/components/main-title.css">
+  <link rel="stylesheet" href="css/components/main-subtitle.css">
+  <link rel="stylesheet" href="css/components/banner-section/photo-glitch.css">
+  <link rel="stylesheet" href="css/components/loader.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geo:ital@0;1&display=swap" rel="stylesheet">
 
+  <svg class="filter">
+    <filter id="alphaRed">
+      <feColorMatrix mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+    </filter>
+    <filter id="alphaGreen">
+      <feColorMatrix mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+    </filter>
+    <filter id="alphaBlue">
+      <feColorMatrix mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="joint" />
+    </filter>
+    <filter id="alpha">
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+  </svg>
 </head>
+
 <body>
-
+  <div class="loader-bg">
+    <div class="loader">
+    </div>
+  </div>
+  <div id="content" style="display: none;">
     <section class="banner-section">
-        <h1 class="main-title">DEVELOPER</h1>
-        <h2 class="main-subtitle">FRONT END</h2>
+      <h1 class="main-title">DEVELOPER</h1>
+      <h2 class="main-subtitle" style="filter:( 2px 2px 0 red);">FRONT END</h2>
+      <h2 class="main-subtitle -vertical">ESDRAS DINIZ</h2>
 
-        <div class="main-menu">
-            <div class="radio-wrapper">
-                <input class="input" name="btn" id="value-1" type="radio">
-                <div class="btn">
-                <span aria-hidden=""></span>Início
-                <span class="btn__glitch" aria-hidden="">_Home</span>
-                <label class="number">r1</label>
-                </div>
-            </div>
-            <div class="radio-wrapper">
-                <input class="input" name="btn" id="value-2" checked="true" type="radio">
-                <div class="btn">
-                Portifólio<span aria-hidden=""></span>
-                <span class="btn__glitch" aria-hidden="">Portifólio_</span>
-                <label class="number">r2</label>
-                </div>
-            </div>
-            <div class="radio-wrapper">
-                <input class="input" name="btn" id="value-3" type="radio">
-                <div class="btn">
-                Contato<span aria-hidden=""></span>
-                <span class="btn__glitch" aria-hidden="">_Contato</span>
-                <label class="number">r3</label>
-                </div> 
-            </div>
-        </div>
-        
-        <svg class="filter">
-            <filter id="alphaRed">
-              <feColorMatrix mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
-            </filter>
-            <filter id="alphaGreen">
-              <feColorMatrix mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
-            </filter>
-            <filter id="alphaBlue">
-              <feColorMatrix mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="joint" />
-            </filter>
-            <filter id="alpha">
-              <feColorMatrix type="saturate" values="0"/>
-            </filter>
-          </svg>
-          
-          <div class="photo-glitch">
-            <div class="imgWrap">
-              <img class="red" src="assets/img/hd_restoration_result_image.png">
-              <img class="green" src="assets/img/hd_restoration_result_image.png">
-              <img class="blue" src="assets/img/hd_restoration_result_image.png">
-              
-            </div>
+      <div class="main-menu">
+        <div class="radio-wrapper">
+          <input class="input" name="btn" id="value-1" checked="true" type="radio">
+          <div class="btn">
+            <span aria-hidden=""></span>Início
+            <span class="btn__glitch" aria-hidden="">_Home</span>
+            <label class="number">r1</label>
           </div>
+        </div>
+        <div class="radio-wrapper">
+          <input class="input" name="btn" id="value-2" type="radio">
+          <div class="btn">
+            Portifólio<span aria-hidden=""></span>
+            <span class="btn__glitch" aria-hidden="">Portifólio_</span>
+            <label class="number">r2</label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <input class="input" name="btn" id="value-3" type="radio">
+          <div class="btn">
+            Contato<span aria-hidden=""></span>
+            <span class="btn__glitch" aria-hidden="">_Contato</span>
+            <label class="number">r3</label>
+          </div>
+        </div>
+      </div>
 
-        <img src="assets/img/hd_restoration_result_image.png" alt="foto do esdras" class="photo">
+      <div class="photo-glitch">
+        <div class="imgWrap">
+          <img class="red" src="assets/img/hd_restoration_result_image.png">
+          <img class="green" src="assets/img/hd_restoration_result_image.png">
+          <img class="blue" src="assets/img/hd_restoration_result_image.png">
+
+        </div>
+      </div>
+      <img src="assets/img/hd_restoration_result_image.png" alt="foto do esdras" class="photo">
 
 
     </section>
+  </div>
+  <script src="js/loading.js"></script>
 </body>
+
 </html>

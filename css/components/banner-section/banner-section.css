@@ -27,17 +27,32 @@
     color: #ef6273;
     font-size: 227px;
     position: absolute;
-    top: 335px;
+    top:  222px;
     left: 281px;
+    transition: 0.2s ease;
+}
+
+.banner-section .main-title:hover {
+    cursor: pointer;
+    color: #ef6273;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 50px #fff;
 }
 
 .banner-section .main-subtitle {
     color: #737373;
     font-size: 115px;
     position: absolute;
-    top: 330px;
-    left: 428px;
+    top: 280px;
+    left: 410px;
     letter-spacing: 24px;
+}
+
+.banner-section .main-subtitle.-vertical {
+    left: -316px;
+    top: 370px;
+    font-size: 200px;
+    color: rgba(192, 192, 192, 0.712);
+    letter-spacing: -9px;
 }
 
 .banner-section .photo-glitch {

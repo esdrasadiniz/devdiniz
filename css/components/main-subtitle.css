@@ -4,3 +4,8 @@
     font-style: normal;
     text-shadow: none;
 }
+
+.main-subtitle.-vertical {
+    transform: rotate(-90deg);
+    
+}
