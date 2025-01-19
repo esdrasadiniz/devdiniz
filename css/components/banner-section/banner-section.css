@@ -10,9 +10,9 @@
 
 .banner-section .main-menu {
     position: absolute;
-    bottom: 100px;
-    left: 667px;
-    transform: scale(2);
+    bottom: 50px;
+    left: 600px;
+    display: none;
 }
 
 .banner-section .photo {
@@ -30,6 +30,7 @@
     top:  222px;
     left: 281px;
     transition: 0.2s ease;
+    display: none;
 }
 
 .banner-section .main-title:hover {
@@ -45,6 +46,7 @@
     top: 280px;
     left: 410px;
     letter-spacing: 24px;
+    display: none;
 }
 
 .banner-section .main-subtitle.-vertical {
@@ -53,6 +55,7 @@
     font-size: 200px;
     color: rgba(192, 192, 192, 0.712);
     letter-spacing: -9px;
+    display: block;
 }
 
 .banner-section .photo-glitch {
@@ -62,3 +65,47 @@
     right: 226px;
     z-index: 2;
 }
+
+.banner-photo {
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateX(50px); /* Posição inicial para animação */
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  width: 850px;
+  height: 850px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* CSS (loader.css ou outro arquivo de estilos) */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(50px); /* Começa deslocada para baixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Termina na posição original */
+    }
+  }
+  
+  .fadeInLeft {
+    animation: fadeInLeft 1s ease-out forwards; /* Animação ao ativar a classe */
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Começa deslocada para baixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Termina na posição original */
+    }
+  }
+  
+  .fadeInUp {
+    animation: fadeInUp 1s ease-out forwards; /* Animação ao ativar a classe */
+  }
+
